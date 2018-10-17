@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: #fff;
+  color: #fff; }
+
+#main-header {
+  background: url(/src/img/top-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px; }
+
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 24px;
+  padding: 12px 24px; }
+  .navbar__container {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto auto; }
+    .navbar__container__logo {
+      display: inline-block;
+      margin: auto auto; }
+    .navbar__container__navigation {
+      display: none;
+      margin: auto 25px; }
+      .navbar__container__navigation__item {
+        display: inline-block;
+        padding: 0 12px; }
+    .navbar__container__dropdown {
+      display: inline-block;
+      margin: auto 0 auto 30px; }
+      .navbar__container__dropdown i {
+        cursor: pointer; }
+      .navbar__container__dropdown__menu {
+        display: none; }
+        .navbar__container__dropdown__menu ul li {
+          float: none;
+          padding: 10px 10px; }
+      .navbar__container__dropdown:hover .navbar__container__dropdown__menu {
+        display: block; }
+        .navbar__container__dropdown:hover .navbar__container__dropdown__menu li {
+          opacity: 0.8; }
+          .navbar__container__dropdown:hover .navbar__container__dropdown__menu li:hover {
+            opacity: 1; }
+    @media (min-width: 768px) {
+      .navbar__container__logo {
+        width: 25%;
+        justify-content: left; }
+      .navbar__container__navigation {
+        display: block; }
+      .navbar__container__dropdown {
+        display: none; }
+      .navbar__container-nav-screen {
+        display: block;
+        width: 50%;
+        text-transform: uppercase;
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 700;
+        padding-top: 88px;
+        letter-spacing: 1px; }
+        .navbar__container-nav-screen ul {
+          display: flex;
+          justify-content: center; }
+          .navbar__container-nav-screen ul li {
+            margin: 0 23px; }
+      .navbar__container-search {
+        display: block;
+        width: 25%;
+        text-align: right;
+        padding-top: 83px; }
+      .navbar__container-hamburger {
+        display: none; } }
+    .navbar__container-content-title {
+      margin-top: 220px; }
+
+.navbar a {
+  color: #fff;
+  text-decoration: none; }
+  .navbar a:hover {
+    color: rgba(255, 255, 255, 0.6); }

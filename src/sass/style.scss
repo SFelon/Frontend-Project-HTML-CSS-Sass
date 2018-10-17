@@ -1,0 +1,144 @@
+@import "_variables";
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $primary;
+  color: $primary;
+}
+
+#main-header {
+  background: url(/src/img/top-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 24px;
+  padding: 12px 24px;
+
+  &__container {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto auto;
+
+    &__logo {
+      display: inline-block;
+      margin: auto auto;
+    }
+
+    &__navigation {
+      display: none;
+      margin: auto 25px;
+
+      &__item {
+        display: inline-block;
+        padding: 0 12px;
+      }
+    }
+
+    &__dropdown {
+      display: inline-block;
+      margin: auto 0 auto 30px;
+
+      i {
+        cursor: pointer;
+      }
+
+      &__menu {
+        display: none;
+
+        ul {
+          li {
+            float: none;
+            padding: 10px 10px;
+          }
+        }
+
+
+      }
+
+      &:hover &__menu {
+        display: block;
+
+        li {
+          opacity: 0.8;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    @media (min-width: $responsive-breakpoint-MD) {
+        &__logo {
+          width: 25%;
+          justify-content: left;
+        }
+
+        &__navigation {
+          display: block;
+        }
+
+        &__dropdown {
+          display: none;
+        }
+
+        &-nav-screen {
+          display: block;
+          width: 50%;
+          text-transform: uppercase;
+          color: #FFF;
+          font-size: 14px;
+          font-weight: 700;
+          padding-top: 88px;
+          letter-spacing: 1px;
+
+          ul {
+            display: flex;
+            justify-content: center;
+
+            li {
+              margin: 0 23px;
+            }
+          }
+        }
+
+        &-search {
+          display: block;
+          width: 25%;
+          text-align: right;
+          padding-top: 83px;
+        }
+
+        &-hamburger {
+          display: none;
+        }
+      }
+
+      &-content {
+        &-title {
+          margin-top: 220px;
+        }
+      }
+    }
+  }
+
+.navbar a {
+  color: $primary;
+  text-decoration: none;
+  &:hover {
+    color: rgba(255,255,255, 0.6);
+  }
+}
+
+
