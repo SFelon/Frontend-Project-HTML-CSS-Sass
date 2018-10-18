@@ -1,40 +1,107 @@
-#about-head-section div.card {
-  color: #000;
-  border: none;
-  position: relative;
-}
-
-#about-head-section {
-  padding-top: 50px;
-  padding-bottom: 50px;
+#about-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
   background: url(/src/img/footer-background.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 500px;
   position: relative;
 }
 
-#about-us-img {
-  box-shadow: 0 0 10px #333;
+#about-section .container {
+  margin: 0 2%;
+  display: flex;
+  justify-content: center;
+
+  .about-box {
+    position: relative;
+    margin: auto 2% auto 5%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+
+    .about-title {
+      font-size: 3.0em;
+      color: $secondary;
+    }
+
+    .about-text {
+      font-size: 0.9em;
+      color: $secondary;
+      padding: 2% 0 5% 0;
+      line-height: 1.6;
+      align-self: flex-start;
+    }
+
+    button {
+      padding: 2% 10% 2% 2%;
+      cursor: pointer;
+      letter-spacing: 0.1em;
+      align-self: flex-start;
+    }
+
+    &::before {
+      content:'';
+      width:120px;
+      height:2px;
+      background: #bcbcbc;
+      position:absolute;
+      top: 25px;
+      left:-140px;
+    }
+
+    &::after {
+      content:'';
+      width:40px;
+      height:4px;
+      background:$designed;
+      position:absolute;
+      top: 75px;
+      left:-60px;
+    }
+  }
 }
 
-#about-head-section div.card::before {
-  content:'';
-  width:200px;
-  height:2px;
-  background: #bcbcbc;
-  position:absolute;
-  top: 50px;
-  left:-200px;
+.about-image-box {
+  max-width: 500px;
+
+  .about-image {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.9;
+    box-shadow: 0 0 20px #333;
+  }
 }
 
-#about-head-section div.card::after {
-  content:'';
-  width:40px;
-  height:4px;
-  background:$designed;
-  position:absolute;
-  top: 110px;
-  left:-40px;
+@media screen and (max-width: $responsive-breakpoint-MD) {
+  #about-section .container .about-box {
+    &::before {
+      content: '';
+      width: 0px;
+      height: 0px;
+    }
+
+    &::after {
+      content:'';
+      width: 0px;
+      height: 0px;
+    }
+  }
 }
+
+
+
+@media screen and (max-width: $responsive-breakpoint-LG) {
+  #about-section .container {
+    flex-wrap: wrap;
+
+    .about-image-box {
+      margin: 0% 2% 2% 2%;
+    }
+
+    button {
+      padding: 0.5% 2.5%;
+    }
+  }
+}
+

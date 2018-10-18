@@ -1,39 +1,211 @@
-#products-head-section div.card {
-  color: #000;
-  border: none;
-  position: relative;
+#products-section .container-furniture {
+  padding-top:  3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .product-box {
+    position: relative;
+    margin: 0 2%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .product-title {
+      font-size: 3.5em;
+      color: $secondary;
+    }
+
+    .product-text {
+      font-size: 0.9em;
+      color: $secondary;
+      padding: 2% 20% 5% 0;
+      text-align: justify;
+    }
+
+    button {
+      padding: 2% 10% 2% 2%;
+      cursor: pointer;
+      letter-spacing: 0.1em;
+      align-self: flex-start;
+    }
+
+    &::before {
+      content: '';
+      width: 120px;
+      height: 2px;
+      background: $secondary;
+      position: absolute;
+      top: 25px;
+      left: -140px;
+    }
+
+    &::after {
+      content: '';
+      width: 40px;
+      height: 4px;
+      background: $designed;
+      position: absolute;
+      top: 80px;
+      left: -60px;
+    }
+  }
 }
 
-#products-head-section div.card::before {
-  content: '';
-  width: 80px;
-  height: 2px;
-  background: #bcbcbc;
-  position: absolute;
-  top: 50px;
-  left: -80px;
-}
 
-#products-head-section div.card::after {
-  content: '';
-  width: 40px;
-  height: 4px;
-  background: $designed;
-  position: absolute;
-  top: 80px;
-  left: -40px;
+#products-section .container-decor {
+  padding-top:  3%;
+  margin: 0 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .product-box {
+    position: relative;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    .product-title {
+      font-size: 3.5em;
+      color: $secondary;
+      align-self: flex-end;
+    }
+
+    .product-text {
+      font-size: 0.9em;
+      color: $secondary;
+      padding: 2% 0 5% 20%;
+      text-align: justify;
+      text-align-last: right;
+    }
+
+    button {
+      padding: 2% 2% 2% 10%;
+      cursor: pointer;
+      letter-spacing: 0.1em;
+      align-self: flex-end;
+    }
+
+    &::before {
+      content: '';
+      width: 120px;
+      height: 2px;
+      background: $secondary;
+      position: absolute;
+      top: 25px;
+      right: -140px;
+    }
+
+    &::after {
+      content: '';
+      width: 40px;
+      height: 4px;
+      background: $designed;
+      position: absolute;
+      top: 80px;
+      right: -60px;
+    }
+  }
 }
 
 .btn-outline-dark {
+  background-color: transparent;
+  color: $secondary;
   border: none;
-  border-radius: 0;
-  border-bottom: 3px solid $designed;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 1rem;
+  border-bottom: 2px solid $designed;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out;
+;
+
+  &:hover {
+    background-color: $secondary;
+    color: $primary;
+  }
 }
 
-#furniture-img,
-#decor-img {
-  box-shadow: 0 0 10px #333;
+.product-image-box {
+  max-width: 500px;
+
+  .product-image {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.9;
+    box-shadow: 0 0 20px #333;
+  }
+}
+
+@media screen and (max-width: $responsive-breakpoint-MD) {
+  #products-section .container-furniture {
+    flex-wrap: wrap;
+
+    .product-box {
+      margin: 2% 2%;
+    }
+
+    .product-image-box {
+      margin: 2% 2%;
+    }
+
+    button {
+      padding: 0.5% 2.5%;
+    }
+  }
+
+  #products-section .container-decor {
+    flex-wrap: wrap;
+
+    .product-box {
+      order: 1;
+      margin: 2% 2%;
+
+      &::before {
+        content: '';
+        width: 0;
+        height: 0;
+      }
+
+      &::after {
+        content: '';
+        width: 0;
+        height: 0;
+      }
+    }
+
+    .product-image-box {
+      order: 2;
+      margin: 2% 2%;
+    }
+
+    button {
+      padding: 0.5% 2.5%;
+    }
+  }
+}
+
+@media screen and (max-width: $responsive-breakpoint-SM) {
+  #products-section .container-decor {
+
+    .product-box {
+      order: 1;
+      margin: 2% 2%;
+
+      .product-title {
+      }
+
+      .product-text {
+        padding: 5% 0%
+      }
+    }
+
+    .product-image-box {
+      order: 2;
+      margin: 2% 2%;
+    }
+
+  }
 }

@@ -9,7 +9,7 @@ gulp.task('serve', ['sass'], function() {
     server: "./"
   });
 
-  gulp.watch("./src/sass/style.scss", ['sass']);
+  gulp.watch("./src/sass/*.scss", ['sass']);
   gulp.watch("./*.html").on('change', browserSync.reload);
 });
 

@@ -1,3 +1,30 @@
-footer#main-footer {
+#main-footer {
   background-color: $secondary;
+}
+
+#main-footer .container {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+
+  p {
+    opacity: 0.8;
+  }
+}
+
+@media screen and (max-width: $responsive-breakpoint-SM) {
+  footer#main-footer .container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+
+    .footer-text {
+      padding: 2px 0;
+      order: 2;
+    }
+
+    .footer-logo {
+      order: 1;
+    }
+  }
 }
