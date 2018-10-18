@@ -1,0 +1,58 @@
+#home .inner-container {
+  padding-top: 150px;
+  margin: auto auto;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    margin-bottom: 2%;
+    font-size: 5em;
+    color: $designed;
+    letter-spacing: 12px;
+  }
+
+  button {
+    padding: 2% 10%;
+    align-self: flex-start;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+
+    i {
+      font-size: 1.2em;
+      padding-left: 16px;
+    }
+  }
+}
+
+.btn-outline-light {
+  font-weight: 900;
+  background-color: transparent;
+  color: $primary;
+  border: 1px solid $primary;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+
+  &:hover {
+    background-color: $primary;
+    color: $secondary;
+    border-color: $secondary;
+  }
+}
+
+@media screen and (max-width: $responsive-breakpoint-SM) {
+  #home .inner-container {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+
+    h1 {
+      font-size: 3.7em;
+    }
+
+    button {
+      padding: 2% 5%;
+      align-self: center;
+    }
+  }
+}
