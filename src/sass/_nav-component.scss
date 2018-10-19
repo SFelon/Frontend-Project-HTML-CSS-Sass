@@ -23,26 +23,31 @@
   .nav-wrapper {
     cursor: pointer;
   }
+
+  ul li {
+    display: inline-block;
+    margin-left: 56px;
+
+    &:last-child {
+      margin-right: 36px;
+    }
+
+    label {
+      cursor: pointer;
+    }
+
+    a {
+      color: $primary;
+      display: inline-block;
+      text-decoration: none;
+      font-size: 14px;
+      letter-spacing: 2px;
+      font-weight: 600;
+    }
+  }
 }
 
-nav ul li {
-	display: inline-block;
-	text-align: center;
-	margin-left: 48px;
 
-	&:last-child {
-		margin-right: 36px;
-	}
-
-	a {
-		color: $primary;
-		display: inline-block;
-		text-decoration: none;
-		font-size: 14px;
-		letter-spacing: 2px;
-		font-weight: 600;
-	}
-}
 
 
 @media screen and (max-width: 864px) {
@@ -120,6 +125,10 @@ nav ul li {
       transition: all 0.3s ease-in-out;
     }
   }
+}
+
+#nav:checked + .nav-btn {
+  position: fixed;
 }
 
 #nav:checked + .nav-btn i {
