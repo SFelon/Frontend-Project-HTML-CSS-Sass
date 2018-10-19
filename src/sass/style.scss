@@ -1,11 +1,4 @@
 @import "variables";
-@import "nav-component";
-@import "home-component";
-@import "products-component";
-@import "videos-component";
-@import "showcase-component";
-@import "about-component";
-@import "footer-component";
 
 * {
   box-sizing: border-box;
@@ -18,5 +11,16 @@ body {
   color: $primary;
   font-family: 'Ubuntu', sans-serif;
 }
+
+
+@import "nav-component";
+@import "home-component";
+@import "products-component";
+@import "videos-component";
+@import "showcase-component";
+@import "about-component";
+@import "footer-component";
+
+
 
 

@@ -1,5 +1,15 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #fff;
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif; }
+
 #main-header {
-  background: url(/src/img/header-background.png);
+  background: url(../img/header-background.png);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 750px; }
@@ -380,7 +390,7 @@
     height: 0; } }
 
 #showcase-section {
-  background: url(/src/img/showcase-background.png);
+  background: url(../img/showcase-background.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -463,7 +473,7 @@ svg.video-overlay-play-button {
 #about-section {
   padding-top: 100px;
   padding-bottom: 100px;
-  background: url(/src/img/footer-background.png);
+  background: url(../img/footer-background.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -556,13 +566,3 @@ svg.video-overlay-play-button {
       order: 2; }
     footer#main-footer .container .footer-logo {
       order: 1; } }
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
-
-body {
-  background-color: #fff;
-  color: #fff;
-  font-family: 'Ubuntu', sans-serif; }
