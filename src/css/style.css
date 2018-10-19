@@ -268,6 +268,24 @@ body {
     opacity: 0.9;
     box-shadow: 0 0 20px #333; }
 
+@media screen and (max-width: 1300px) {
+  #products-section .container-furniture .product-box::before {
+    content: '';
+    width: 0;
+    height: 0; }
+  #products-section .container-furniture .product-box::after {
+    content: '';
+    width: 0;
+    height: 0; }
+  #products-section .container-decor .product-box::before {
+    content: '';
+    width: 0;
+    height: 0; }
+  #products-section .container-decor .product-box::after {
+    content: '';
+    width: 0;
+    height: 0; } }
+
 @media screen and (max-width: 768px) {
   #products-section .container-furniture {
     flex-wrap: wrap; }
@@ -282,14 +300,6 @@ body {
     #products-section .container-decor .product-box {
       order: 1;
       margin: 2% 2%; }
-      #products-section .container-decor .product-box::before {
-        content: '';
-        width: 0;
-        height: 0; }
-      #products-section .container-decor .product-box::after {
-        content: '';
-        width: 0;
-        height: 0; }
     #products-section .container-decor .product-image-box {
       order: 2;
       margin: 2% 2%; }

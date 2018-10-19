@@ -140,6 +140,44 @@
   }
 }
 
+@media screen and (max-width: $responsive-breakpoint-XL) {
+  #products-section .container-furniture {
+
+    .product-box {
+
+      &::before {
+        content: '';
+        width: 0;
+        height: 0;
+      }
+
+      &::after {
+        content: '';
+        width: 0;
+        height: 0;
+      }
+    }
+  }
+
+  #products-section .container-decor {
+
+    .product-box {
+
+      &::before {
+        content: '';
+        width: 0;
+        height: 0;
+      }
+
+      &::after {
+        content: '';
+        width: 0;
+        height: 0;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: $responsive-breakpoint-MD) {
   #products-section .container-furniture {
     flex-wrap: wrap;
@@ -164,17 +202,6 @@
       order: 1;
       margin: 2% 2%;
 
-      &::before {
-        content: '';
-        width: 0;
-        height: 0;
-      }
-
-      &::after {
-        content: '';
-        width: 0;
-        height: 0;
-      }
     }
 
     .product-image-box {
@@ -195,8 +222,6 @@
       order: 1;
       margin: 2% 2%;
 
-      .product-title {
-      }
 
       .product-text {
         padding: 5% 0%
@@ -207,6 +232,5 @@
       order: 2;
       margin: 2% 2%;
     }
-
   }
 }
