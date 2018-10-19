@@ -13,39 +13,39 @@
 <body>
 	<header id="main-header">
 		<nav>
-			<div class="container">
-				<input type="checkbox" id="nav" class="hidden">
-				<label for="nav" class="nav-btn">
+			<div class="Navigation">
+				<input class="Navigation-hamburger Navigation-hamburger--hidden" id="hamburger" type="checkbox"  >
+				<label for="hamburger" class="Navigation-hamburger-btn">
 						<i class="fas fa-bars fa-2x"></i>
 				</label>
-				<div class="logo">
+				<div class="Navigation-logo">
 							<a href="#"><img src="src/img/logo-menu.png" alt="logo"></a>
 				</div>
-				<div class="nav-wrapper">
+				<div class="Navigation-wrapper">
 					<ul>
 						<li>
 							<a href="#home">
-								<label for="nav">HOME</label>
+								<label for="hamburger">HOME</label>
 							</a>
 						</li>
 						<li>
 							<a href="#products-section">
-								<label for="nav">PRODUCTS</label>
+								<label for="hamburger">PRODUCTS</label>
 							</a>
 						</li>
 						<li>
 							<a href="#about-section">
-								<label for="nav">ABOUT</label>
+								<label for="hamburger">ABOUT</label>
 							</a>
 						</li>
 						<li>
 							<a href="#">
-								<label for="nav"><i class="fa fa-info-circle fa-2x"></i></label>
+								<label for="hamburger"><i class="fa fa-info-circle fa-2x"></i></label>
 							</a>
 						</li>
 						<li>
 							<a href="#">
-								<label for="nav"><i class="fa fa-language fa-2x"></i></label>
+								<label for="hamburger"><i class="fa fa-language fa-2x"></i></label>
 							</a>
 						</li>
 					</ul>
@@ -53,11 +53,11 @@
 			</div> 
 		</nav>
 		<section id="home">
-			<div class="inner-container">
-					<h1 id="main-logo">
+			<div class="HomePanel">
+					<h1 class="HomePanel-title">
 						<strong> WOODER </strong>
 					</h1>
-					<button type="button" class="btn-outline-light">
+					<button class="u-btn u-linkOutlineLight" type="button" >
 						LEARN MORE <i class="fa fa-long-arrow-alt-right"></i>
 					</button>
 			</div>
@@ -68,79 +68,77 @@
 		<article>
 
 			<section id="products-section">
-				<div class="container-furniture">
-					<div class="product-box">
-						<h2 class="product-title">FURNITURE</h2>
-						<p class="product-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				<div class="Furniture">
+					<div class="Furniture-info">
+						<h2 class="Furniture-info-title">FURNITURE</h2>
+						<p class="Furniture-info-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
 							Voluptate eveniet blanditiis incidunt iusto corrupti illum
-							cum laudantium ex sequi amet.
-						</p>
-						<button type="button" class="btn-outline-dark">
+							cum laudantium ex sequi amet.</p>
+						<button class="u-btn u-btnOutlineDark type="button" ">
 							<span>LEARN MORE <i class="fa fa-long-arrow-alt-right"></i></span>
 						</button>
 					</div>
-					<div class="product-image-box">
-						<img src="src/img/furniture.png" id="furniture-img" alt="furniture" class="product-image">
+					<div class="Furniture-image">
+						<img id="furniture-img" class="u-styleImage" src="src/img/furniture.png" alt="furniture"/>
 					</div>
 				</div>
-				<div class="container-decor">
-					<div class="product-image-box">
-						<img src="src/img/decor.png" id="decor-img" alt="decor" class="product-image">
+				<div class="Decor">
+					<div class="Decor-image">
+						<img id="decor-img" class="u-styleImage" src="src/img/decor.png" alt="decor"/>
 					</div>
-					<div class="product-box">
-						<h2 class="product-title">DECOR</h2>
-						<p class="product-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					<div class="Decor-info">
+						<h2 class="Decor-info-title">DECOR</h2>
+						<p class="Decor-info-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
 							Voluptate eveniet blanditiis incidunt iusto corrupti illum
-							cum laudantium ex sequi amet.
-						</p>
-						<button type="button" class="btn-outline-dark"> LEARN MORE <i class="fa fa-long-arrow-alt-right"></i>
+							cum laudantium ex sequi amet.</p>
+						<button class="u-btn u-btnOutlineDark" type="button"> LEARN MORE <i class="fa fa-long-arrow-alt-right"></i>
 						</button>
 					</div>
 				</div>
 			</section>
 
 			<section id="videos-section">
-				<div class="container">
-					<h2 class="main-title">WOODER - IS QUALITY</h2>
-					<p class="main-text">
+				<div class="VideoGalleryInfo">
+					<h2 class="VideoGalleryInfo-title">WOODER - IS QUALITY</h2>
+					<p class="VideoGalleryInfo-text">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. At error obcaecati ratione ut voluptas voluptatum.
 					</p>
 				</div>
-				<div class="container-videos">
-					<div class="video">
-						<a href="#" class="video-link" data-video="#" data-toggle="#" data-target="#">
-							<img src="src/img/video1-poster-circle.png" alt=""/>
+				<div class="VideoGallery">
+					<div class="VideoGallery-video">
+						<a href="#" class="VideoGallery-video-link" data-video="#" data-toggle="#" data-target="#">
+							<img class="VideoGallery-video-poster" src="src/img/video1-poster-circle.png" alt=""/>
 						</a>
-						<h3 class="video-info">Innovative design</h3>
+						<h3 class="VideoGallery-video-text">Innovative design</h3>
 					</div>
-					<div class="video">
-						<a href="#" class="video-link" data-video="#" data-toggle="#" data-target="#">
-							<img src="src/img/video2-poster-circle.png" alt=""/>
+					<div class="VideoGallery-video">
+						<a href="#" class="VideoGallery-video-link" data-video="#" data-toggle="#" data-target="#">
+							<img class="VideoGallery-video-poster" src="src/img/video2-poster-circle.png" alt=""/>
 						</a>
-						<h3 class="video-info">Innovative design</h3>
+						<h3 class="VideoGallery-video-text">Innovative design</h3>
 					</div>
-					<div class="video">
-						<a href="#" class="video-link" data-video="#" data-toggle="#" data-target="#">
-							<img src="src/img/video3-poster-circle.png" alt="">
+					<div class="VideoGallery-video">
+						<a class="VideoGallery-video-link" href="#"  data-video="#" data-toggle="#" data-target="#">
+							<img class="VideoGallery-video-poster" src="src/img/video3-poster-circle.png" alt=""/>
 						</a>
-						<h3 class="video-info">Quality Products</h3>
+						<h3 class="VideoGallery-video-text">Quality Products</h3>
 					</div>
 				</div>
 			</section>
 
 			<section id="showcase-section">
-					<div class="container">
-						<svg class="video-overlay-play-button" viewBox="0 0 200 200" alt="Play video">
+					<div class="Showcase">
+						<svg class="Showcase-playButtonDecoration" viewBox="0 0 200 200" alt="Play video">
 							<circle cx="100" cy="100" r="90" fill="none" stroke-width="15" stroke="#fff"/>
 							<polygon points="70, 55 70, 145 145, 100" fill="#fff"/>
 						</svg>
-						<div class="video-container">
-							<h2 class="showcase-title">WE DO THE DESIGN <br/> OF ANY COMPLEXITY</h2>
-							<p class="showcase-text">
+						<div class="Showcase-info">
+							<h2 class="Showcase-info-title">WE DO THE DESIGN <br/> OF ANY COMPLEXITY</h2>
+							<p class="Showcase-info-text">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi laudantium nam recusandae?
 								Amet aspernatur autem consequatur eius excepturi in odit porro quam quidem.
 							</p>
-							<a href="#" class="btn-outline-light" data-video="#" data-toggle="#" data-target="#">
+							<a class="u-link u-linkOutlineLight" href="#" data-video="#" data-toggle="#" data-target="#">
 								<i class="fa fa-play-circle"></i> WATCH VIDEO
 							</a>
 						</div>
@@ -148,17 +146,17 @@
 			</section>
 
 			<section id="about-section">
-				<div class="container">
-					<div class="about-image-box">
-						<img src="src/img/about-us.png" id="about-us-img" alt="about" class="about-image">
+				<div class="About">
+					<div class="About-image">
+						<img class="u-styleImage" id="about-us-img" src="src/img/about-us.png" alt="about"/>
 					</div>
-					<div class="about-box">
-						<h2 class="about-title">ABOUT US</h2>
-						<p class="about-text">
+					<div class="About-info">
+						<h2 class="About-info-title">ABOUT US</h2>
+						<p class="About-info-text">
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eveniet blanditiis incidunt iusto corrupti illum
 							cum laudantium ex sequi amet.
 						</p>
-						<button type="button" class="btn-outline-dark"> LEARN MORE <i class="fa fa-long-arrow-alt-right"></i>
+						<button class="u-btn u-btnOutlineDark" type="button"> LEARN MORE <i class="fa fa-long-arrow-alt-right"></i>
 						</button>
 					</div>
 				</div>
@@ -168,12 +166,12 @@
 	</main>
 
 	<footer id="main-footer">
-		<div class="container">
-			<p class="footer-text"> Copyright &copy; 2018 </p>
-				<div class="footer-logo">
+		<div class="Footer">
+			<p class="Footer-text"> Copyright &copy; 2018 </p>
+				<div class="Footer-logo">
 					<img id="bottom-logo" src="src/img/logo-menu.png"/>
 				</div>
-			<p class="footer-text">Designed: SFelon</p>
+			<p class="Footer-text">Designed: SFelon</p>
 		</div>
 	</footer>
 

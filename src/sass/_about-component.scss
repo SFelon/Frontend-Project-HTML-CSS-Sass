@@ -8,35 +8,28 @@
   position: relative;
 }
 
-#about-section .container {
+#about-section .About {
   margin: 0 2%;
   display: flex;
   justify-content: center;
 
-  .about-box {
+  .About-info {
     position: relative;
     margin: auto 2% auto 5%;
     max-width: 500px;
     display: flex;
     flex-direction: column;
 
-    .about-title {
+    .About-info-title {
       font-size: 3.0em;
       color: $secondary;
     }
 
-    .about-text {
+    .About-info-text {
       font-size: 0.9em;
       color: $secondary;
       padding: 2% 0 5% 0;
       line-height: 1.6;
-      align-self: flex-start;
-    }
-
-    button {
-      padding: 2% 10% 2% 2%;
-      cursor: pointer;
-      letter-spacing: 0.1em;
       align-self: flex-start;
     }
 
@@ -62,19 +55,12 @@
   }
 }
 
-.about-image-box {
+.About-image {
   max-width: 500px;
-
-  .about-image {
-    max-width: 100%;
-    height: auto;
-    opacity: 0.9;
-    box-shadow: 0 0 20px #333;
-  }
 }
 
 @media screen and (max-width: $responsive-breakpoint-MD) {
-  #about-section .container .about-box {
+  #about-section .About .About-info {
     &::before {
       content: '';
       width: 0px;
@@ -92,14 +78,14 @@
 
 
 @media screen and (max-width: $responsive-breakpoint-LG) {
-  #about-section .container {
+  #about-section .About {
     flex-wrap: wrap;
 
-    .about-image-box {
+    .About-image {
       margin: 0% 2% 2% 2%;
     }
 
-    button {
+    .u-btn {
       padding: 0.5% 2.5%;
     }
   }

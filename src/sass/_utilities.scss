@@ -1,0 +1,59 @@
+
+.u-btn {
+    padding: 2% 10% 2% 2%;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    align-self: flex-start;
+}
+
+.u-btnOutlineDark {
+  font-weight: 900;
+  background-color: transparent;
+  color: $secondary;
+  border: none;
+  border-bottom: 2px solid $designed;
+  transition: all 0.25s ease-in-out;
+
+  &:hover {
+    background-color: $secondary;
+    color: $primary;
+  }
+
+  &:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+}
+
+.u-styleImage {
+  max-width: 100%;
+  height: auto;
+  opacity: 0.9;
+  box-shadow: 0 0 20px #333;
+}
+
+.u-link {
+  padding: 2% 10%;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+}
+
+.u-linkOutlineLight {
+  font-weight: 900;
+  background-color: transparent;
+  color: $primary;
+  border: 1px solid $primary;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+
+  &:hover {
+    background-color: $primary;
+    color: $secondary;
+    border-color: $secondary;
+  }
+
+  &:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+}

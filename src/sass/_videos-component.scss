@@ -1,4 +1,4 @@
-#videos-section .container {
+#videos-section .VideoGalleryInfo {
   position: relative;
   max-width: 700px;
   margin: 100px auto 0 auto;
@@ -6,13 +6,13 @@
   flex-direction: column;
   align-items: center;
 
-  .main-title {
+  .VideoGalleryInfo-title {
     font-size: 3.5em;
     letter-spacing: 2px;
     color: $secondary;
   }
 
-  .main-text {
+  .VideoGalleryInfo-text {
     font-size: 0.9em;
     color: $secondary;
     padding: 20px 10%;
@@ -32,14 +32,14 @@
   }
 }
 
-#videos-section .container-videos {
+#videos-section .VideoGallery {
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
 
-  .video {
+  .VideoGallery-video {
     position: relative;
     margin: 3% 3%;
     display: flex;
@@ -47,7 +47,7 @@
     justify-content: center;
     align-items: center;
 
-    img {
+    .VideoGallery-video-poster {
       background-color: $primary;
       border-radius: 50%;
       padding: 6px;
@@ -60,7 +60,7 @@
       }
     }
 
-    .video-info {
+    .VideoGallery-video-text {
       margin: 2% 0;
       padding: 10% 0;
       font-size: 1em;
@@ -81,17 +81,17 @@
 }
 
 @media screen and (max-width: $responsive-breakpoint-LG) {
-  #videos-section .container-videos {
+  #videos-section .VideoGallery {
     flex-wrap: wrap;
 
   }
 }
 
 @media screen and (max-width: $responsive-breakpoint-MD) {
-  #videos-section .container {
+  #videos-section .VideoGalleryInfo {
     flex-wrap: wrap;
 
-    .main-title {
+    .VideoGalleryInfo-title {
       text-align: center;
       font-size: 2.5em;
     }
@@ -103,7 +103,7 @@
 }
 
 @media screen and (max-width: 500px) {
-  #videos-section .container {
+  #videos-section .VideoGalleryInfo {
 
     &::after {
       content: '';

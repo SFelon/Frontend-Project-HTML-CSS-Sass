@@ -1,11 +1,11 @@
-#products-section .container-furniture {
+#products-section .Furniture {
   padding-top:  3%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 
-  .product-box {
+  .Furniture-info {
     position: relative;
     margin: 0 2%;
     max-width: 500px;
@@ -13,23 +13,16 @@
     flex-direction: column;
     justify-content: center;
 
-    .product-title {
+    .Furniture-info-title {
       font-size: 3.5em;
       color: $secondary;
     }
 
-    .product-text {
+    .Furniture-info-text {
       font-size: 0.9em;
       color: $secondary;
       padding: 2% 20% 5% 0;
       text-align: justify;
-    }
-
-    button {
-      padding: 2% 10% 2% 2%;
-      cursor: pointer;
-      letter-spacing: 0.1em;
-      align-self: flex-start;
     }
 
     &::before {
@@ -52,10 +45,14 @@
       left: -60px;
     }
   }
+
+  .Furniture-image {
+    max-width: 500px;
+  }
 }
 
 
-#products-section .container-decor {
+#products-section .Decor {
   padding-top:  3%;
   margin: 0 2%;
   display: flex;
@@ -63,7 +60,7 @@
   justify-content: center;
   align-items: center;
 
-  .product-box {
+  .Decor-info {
     position: relative;
     max-width: 500px;
     display: flex;
@@ -71,25 +68,18 @@
     flex-wrap: nowrap;
     justify-content: center;
 
-    .product-title {
+    .Decor-info-title {
       font-size: 3.5em;
       color: $secondary;
       align-self: flex-end;
     }
 
-    .product-text {
+    .Decor-info-text{
       font-size: 0.9em;
       color: $secondary;
       padding: 2% 0 5% 20%;
       text-align: justify;
       text-align-last: right;
-    }
-
-    button {
-      padding: 2% 2% 2% 10%;
-      cursor: pointer;
-      letter-spacing: 0.1em;
-      align-self: flex-end;
     }
 
     &::before {
@@ -112,38 +102,21 @@
       right: -60px;
     }
   }
-}
 
-.btn-outline-dark {
-  font-weight: 900;
-  background-color: transparent;
-  color: $secondary;
-  border: none;
-  border-bottom: 2px solid $designed;
-  transition: all 0.25s ease-in-out;
+  .Decor-image {
+    max-width: 500px;
+  }
 
-
-  &:hover {
-    background-color: $secondary;
-    color: $primary;
+  .u-btn {
+    align-self: flex-end;
   }
 }
 
-.product-image-box {
-  max-width: 500px;
-
-  .product-image {
-    max-width: 100%;
-    height: auto;
-    opacity: 0.9;
-    box-shadow: 0 0 20px #333;
-  }
-}
 
 @media screen and (max-width: $responsive-breakpoint-XL) {
-  #products-section .container-furniture {
+  #products-section .Furniture {
 
-    .product-box {
+    .Furniture-info {
 
       &::before {
         content: '';
@@ -159,9 +132,9 @@
     }
   }
 
-  #products-section .container-decor {
+  #products-section .Decor {
 
-    .product-box {
+    .Decor-info {
 
       &::before {
         content: '';
@@ -179,56 +152,56 @@
 }
 
 @media screen and (max-width: $responsive-breakpoint-MD) {
-  #products-section .container-furniture {
+  #products-section .Furniture {
     flex-wrap: wrap;
 
-    .product-box {
+    .Furniture-info {
       margin: 2% 2%;
     }
 
-    .product-image-box {
+    .Furniture-image {
       margin: 2% 2%;
     }
 
-    button {
-      padding: 0.5% 2.5%;
+    .u-btn {
+      padding: 1% 5%;
     }
   }
 
-  #products-section .container-decor {
+  #products-section .Decor {
     flex-wrap: wrap;
 
-    .product-box {
+    .Decor-info {
       order: 1;
       margin: 2% 2%;
 
     }
 
-    .product-image-box {
+    .Decor-image {
       order: 2;
       margin: 2% 2%;
     }
 
-    button {
-      padding: 0.5% 2.5%;
+    .u-btn {
+      padding: 1% 5%;
     }
   }
 }
 
 @media screen and (max-width: $responsive-breakpoint-SM) {
-  #products-section .container-decor {
+  #products-section .Decor {
 
-    .product-box {
+    .Decor-info {
       order: 1;
       margin: 2% 2%;
 
 
-      .product-text {
+      .Decor-info-text {
         padding: 5% 0%
       }
     }
 
-    .product-image-box {
+    .Decor-image {
       order: 2;
       margin: 2% 2%;
     }
